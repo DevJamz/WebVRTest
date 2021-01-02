@@ -12,7 +12,7 @@ function createScene() {
     const scene = new BABYLON.Scene(engine);
 
     // Create Camera
-    const camera = new BABYLON.FreeCamera('camera', new BABYLON.Vector3(0, .5, -5), scene);
+    const camera = new BABYLON.WebVRFreeCamera('camera', new BABYLON.Vector3(0, .5, -5), scene);
     camera.attachControl(canvas);
     // Create Light
     const light = new BABYLON.HemisphericLight('light', new BABYLON.Vector3(0, 1, 0), scene);
